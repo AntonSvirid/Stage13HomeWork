@@ -1,7 +1,7 @@
 package by.itstep.antonsvirid.stage13hm.controller;
 
 import by.itstep.antonsvirid.stage13hm.model.logic.Task04Logic;
-import by.itstep.antonsvirid.stage13hm.view.PrinterForTask04;
+import by.itstep.antonsvirid.stage13hm.view.Printer;
 
 import java.util.Scanner;
 
@@ -21,9 +21,11 @@ public class Task04Controller {
         }
 
         int countOfEven = Task04Logic.countOfEven(vector);
+        int countOfNotEven = Task04Logic.countOfNotEven(vector);
 
-        int countOfNotEven = vector.length - countOfEven;
+        String msg = "Count of even numbers is " + countOfEven
+                + ", count of not even numbers is " + countOfNotEven;
 
-        PrinterForTask04.print(countOfEven, countOfNotEven);
+        Printer.print(msg);
     }
 }

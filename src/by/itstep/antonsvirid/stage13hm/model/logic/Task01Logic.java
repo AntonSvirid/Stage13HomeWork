@@ -6,7 +6,7 @@ public class Task01Logic {
             throw new RuntimeException();
         }
 
-        int sort = 3;                             // 3 == "Vector is not ordered." in Printer
+        int sort = 3;                             // 3 == "Vector is not ordered." in InterpretationOfStatus
         boolean increase = true;
         boolean descending = true;
 
@@ -27,9 +27,9 @@ public class Task01Logic {
         }
 
         if (increase == true) {
-            sort = 1;                            // 1 == "Vector is increase ordered." in Printer
+            sort = 1;                            // 1 == "Vector is increase ordered." in InterpretationOfStatus
         } else if (increase == false && descending == true) {
-            sort = 2;                            // 2 == "Vector is descending ordered." in Printer
+            sort = 2;                            // 2 == "Vector is descending ordered." in InterpretationOfStatus
         }
 
         return sort;

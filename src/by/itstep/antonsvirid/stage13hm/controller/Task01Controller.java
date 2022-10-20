@@ -5,6 +5,7 @@
 package by.itstep.antonsvirid.stage13hm.controller;
 
 import by.itstep.antonsvirid.stage13hm.model.logic.Task01Logic;
+import by.itstep.antonsvirid.stage13hm.view.InterpretationOfStatus;
 import by.itstep.antonsvirid.stage13hm.view.Printer;
 
 import java.util.Scanner;
@@ -26,6 +27,8 @@ public class Task01Controller {
 
         int sort = Task01Logic.sort(vector);
 
-        Printer.print(sort);
+        String status = InterpretationOfStatus.msg(sort);
+
+        Printer.print(status);
     }
 }

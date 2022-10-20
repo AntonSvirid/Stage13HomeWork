@@ -17,5 +17,20 @@ public class Task04Logic {
         return countOfEven;
     }
 
+    public static int countOfNotEven(int[] vector) {
+        if (vector == null || vector.length == 0) {
+            throw new RuntimeException();
+        }
+
+        int countOfNotEven = 0;
+
+        for (int i = 0; i < vector.length; i++) {
+            if (vector[i] % 2 != 0) {
+                countOfNotEven++;
+            }
+        }
+
+        return countOfNotEven;
+    }
 }
 
