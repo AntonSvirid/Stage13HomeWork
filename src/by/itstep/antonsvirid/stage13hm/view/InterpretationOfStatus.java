@@ -13,20 +13,15 @@ public class InterpretationOfStatus {
 
         String msg = null;
 
-        if (sort == 1) {
-            msg = MESSAGE_FOR_ONE;
-        } else if (sort == 2) {
-            msg = MESSAGE_FOR_TWO;
-        } else if (sort == 3) {
-            msg = MESSAGE_FOR_THREE;
-        } else if (sort == 4) {
-            msg = MESSAGE_FOR_FOUR;
-        } else if (sort == 5) {
-            msg = MESSAGE_FOR_FIVE;
-        } else if (sort == 6) {
-            msg = MESSAGE_FOR_SIX;
-        } else if (sort == 7) {
-            msg = MESSAGE_FOR_SEVEN;
+        switch (sort){
+            case 1: msg = MESSAGE_FOR_ONE; break;
+            case 2: msg = MESSAGE_FOR_TWO; break;
+            case 3: msg = MESSAGE_FOR_THREE; break;
+            case 4: msg = MESSAGE_FOR_FOUR; break;
+            case 5: msg = MESSAGE_FOR_FIVE; break;
+            case 6: msg = MESSAGE_FOR_SIX; break;
+            case 7: msg = MESSAGE_FOR_SEVEN; break;
+
         }
 
         return msg;
